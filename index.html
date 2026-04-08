@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Datos</title>
+    <script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+<h2>Ingresar datosdsds</h2>
+
+<table>
+    <tr>
+        <th>Eje X</th>
+        <th>Eje Y</th>
+    </tr>
+
+    <tr>
+        <td><input type="number"  class = "xData" ></td>
+        <td><input type="number" class = "yData" ></td>
+    </tr>
+
+    <tr>
+        <td><input type="number" class = "xData" ></td>
+        <td><input type="number" class = "yData" ></td>
+    </tr>
+
+    <tr>
+        <td><input type="number" class = "xData" ></td>
+        <td><input type="number" class = "yData" ></td>
+    </tr>
+
+
+    <label for="tendencia">Línea de tendencia:</label>
+    <select id="tendencia">
+      <option value="ninguna">Ninguna</option>
+      <option value="lineal">Lineal</option>
+      <option value="cuadratica">Cuadrática</option>
+    </select>
+
+    <button id="btn-graficar">Graficar</button>
+
+
+</table>
+
+<div id="tester" style="width:90%;height:250px;"></div>
+
+<script src="prueba.js"></script>
+
+</body>
+</html>
