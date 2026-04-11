@@ -3,10 +3,16 @@
 <head>
     <title>Tabla de Datos</title>
     <script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h2>Ingresar datosdsds</h2>
+<h2>Ingresar datos</h2>
+
+<div class="container"></div>
+
+    <div class="top-section">
+
 
 <table>
     <tr>
@@ -44,7 +50,10 @@
         <td><input type="number" class = "yData" ></td>
     </tr>
 
+    </table>
 
+    <div class="controls">
+  
     <label for="tendencia">Línea de tendencia:</label>
     <select id="tendencia">
       <option value="ninguna">Ninguna</option>
@@ -54,10 +63,15 @@
 
     <button id="btn-graficar">Graficar</button>
 
+    </div>
 
-</table>
+</div>
 
-<div id="tester" style="width:90%;height:250px;"></div>
+    <div class="bottom-section">
+        <div id="tester"></div>
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
