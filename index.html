@@ -61,5 +61,102 @@
 
 <script src="script.js"></script>
 
+<h1>Conversor de unidades</h1>
+
+<label for="tipoUnidad">Tipo de unidad:</label>
+<select id="tipoUnidad">
+    <option value="ninguna">Ninguna</option>
+    <option value="distancia">Distancia</option>
+    <option value="area">Area</option>
+    <option value="volumen">Volumen</option>
+    <option value="tiempo">Tiempo</option>
+</select>
+
+
+<label for="tipoConversionLongitud">Convertir:</label>
+<select id="tipoConversionLongitud" class="hidden">
+    <option value="ninguna">Ninguna</option>
+
+    <option value="kmAhm">km a hm</option>
+    <option value="hmAdam">hm a dam</option>
+    <option value="damAm">dam a m</option>
+    <option value="mAdm">m a dm</option>
+    <option value="dmAcm">dm a cm</option>
+    <option value="cmAmm">cm a mm</option>
+
+    <option value="hmAkm">hm a km</option>
+    <option value="damAhm">dam a hm</option>
+    <option value="mAdam">m a dam</option>
+    <option value="dmAm">dm a m</option>
+    <option value="cmAdm">cm a dm</option>
+    <option value="mmAcm">mm a cm</option>
+</select>
+
+<label for="tipoConversionArea">Convertir:</label>
+<select id="tipoConversionArea" class="hidden">
+    <option value="ninguna">Ninguna</option>
+
+    <option value="km2Ahm2">km² a hm²</option>
+    <option value="hm2Adam2">hm² a dam²</option>
+    <option value="dam2Am2">dam² a m²</option>
+    <option value="m2Adm2">m² a dm²</option>
+    <option value="dm2Acm2">dm² a cm²</option>
+    <option value="cm2Amm2">cm² a mm²</option>
+
+    <option value="hm2Akm2">hm² a km²</option>
+    <option value="dam2Ahm2">dam² a hm²</option>
+    <option value="m2Adam2">m² a dam²</option>
+    <option value="dm2Am2">dm² a m²</option>
+    <option value="cm2Adm2">cm² a dm²</option>
+    <option value="mm2Acm2">mm² a cm²</option>
+</select>
+
+<label for="tipoConversionVolumen">Convertir:</label>
+<select id="tipoConversionVolumen" class="hidden">
+    <option value="ninguna">Ninguna</option>
+
+    <option value="km3Ahm3">km³ a hm³</option>
+    <option value="hm3Adam3">hm³ a dam³</option>
+    <option value="dam3Am3">dam³ a m³</option>
+    <option value="m3Adm3">m³ a dm³</option>
+    <option value="dm3Acm3">dm³ a cm³</option>
+    <option value="cm3Amm3">cm³ a mm³</option>
+
+    <option value="hm3Akm3">hm³ a km³</option>
+    <option value="dam3Ahm3">dam³ a hm³</option>
+    <option value="m3Adam3">m³ a dam³</option>
+    <option value="dm3Am3">dm³ a m³</option>
+    <option value="cm3Adm3">cm³ a dm³</option>
+    <option value="mm3Acm3">mm³ a cm³</option>
+</select>
+
+<label for="tipoConversionTiempo">Convertir:</label>
+<select id="tipoConversionTiempo" class="hidden">
+    <option value="ninguna">Ninguna</option>
+
+    <option value="segAmin">seg a min</option>
+    <option value="minAh">min a h</option>
+    <option value="hAd">h a d</option>
+    <option value="dAsem">d a sem</option>
+    <option value="semAmes">sem a mes</option>
+    <option value="mesAa">mes a a</option>
+
+    <option value="aAmes">a a mes</option>
+    <option value="mesAsem">mes a sem</option>
+    <option value="semAd">sem a d</option>
+    <option value="dAh">d a h</option>
+    <option value="hAmin">h a min</option>
+    <option value="minAseg">min a seg</option>
+</select><br>
+
+<label for="inputDato">Ingrese el dato a convertir:</label>
+<input type="number" id="inputDato" name="inputDato" required>
+
+<label>Resultado:</label>
+<input type="text" disabled><br>
+
+<button type="button">Convertir</button>
+
+
 </body>
 </html>
