@@ -25,7 +25,7 @@ function graficar() {
     }
 
     if (xData.length == 0 || yData.length == 0) {
-        alert('colocal datos');
+        alert('colocar datos');
         return;
     }
     
