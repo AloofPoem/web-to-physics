@@ -66,15 +66,15 @@
 <label for="tipoUnidad">Tipo de unidad:</label>
 <select id="tipoUnidad">
     <option value="ninguna">Ninguna</option>
-    <option value="distancia">Distancia</option>
+    <option value="longitud">Longitud</option>
     <option value="area">Area</option>
     <option value="volumen">Volumen</option>
     <option value="tiempo">Tiempo</option>
 </select>
 
 
-<label for="tipoConversionLongitud">Convertir:</label>
-<select id="tipoConversionLongitud" class="hidden">
+<label id="labelLong" for="tipoConversionLongitud" hidden>Convertir:</label>
+<select id="tipoConversionLongitud" hidden>
     <option value="ninguna">Ninguna</option>
 
     <option value="kmAhm">km a hm</option>
@@ -92,8 +92,8 @@
     <option value="mmAcm">mm a cm</option>
 </select>
 
-<label for="tipoConversionArea">Convertir:</label>
-<select id="tipoConversionArea" class="hidden">
+<label id="labelAr" for="tipoConversionArea" hidden>Convertir:</label>
+<select id="tipoConversionArea" hidden>
     <option value="ninguna">Ninguna</option>
 
     <option value="km2Ahm2">km² a hm²</option>
@@ -111,8 +111,8 @@
     <option value="mm2Acm2">mm² a cm²</option>
 </select>
 
-<label for="tipoConversionVolumen">Convertir:</label>
-<select id="tipoConversionVolumen" class="hidden">
+<label id="labelVol" for="tipoConversionVolumen" hidden>Convertir:</label>
+<select id="tipoConversionVolumen" hidden>
     <option value="ninguna">Ninguna</option>
 
     <option value="km3Ahm3">km³ a hm³</option>
@@ -130,8 +130,8 @@
     <option value="mm3Acm3">mm³ a cm³</option>
 </select>
 
-<label for="tipoConversionTiempo">Convertir:</label>
-<select id="tipoConversionTiempo" class="hidden">
+<label id="labelTi" for="tipoConversionTiempo" hidden>Convertir:</label>
+<select id="tipoConversionTiempo" hidden>
     <option value="ninguna">Ninguna</option>
 
     <option value="segAmin">seg a min</option>
@@ -153,9 +153,11 @@
 <input type="number" id="inputDato" name="inputDato" required>
 
 <label>Resultado:</label>
-<input type="text" disabled><br>
+<input type="text"  id="resultadoConversion" disabled><br>
 
-<button type="button">Convertir</button>
+<button type="button" id="btn-conversion">Convertir</button>
+
+<script src="convertionScript.js"></script>
 
 
 </body>
