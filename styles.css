@@ -15,7 +15,7 @@ body {
     gap: 30px;
 }
 
-h2 {
+h2, h1 {
     font-size: 32px;
     letter-spacing: 2px;
 }
@@ -120,4 +120,67 @@ button:hover {
     width: 100%;
     max-width: 1000px;
     height: 500px;
+}
+
+.converter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+}
+
+.converter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    min-width: 200px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#resultadoConversion {
+    background: #e3e8f0;
+    color: #111;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+@keyframes aparecerSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#tipoConversionLongitud:not([hidden]),
+#tipoConversionArea:not([hidden]),
+#tipoConversionVolumen:not([hidden]),
+#tipoConversionTiempo:not([hidden]),
+#labelLong:not([hidden]),
+#labelAr:not([hidden]),
+#labelVol:not([hidden]),
+#labelTi:not([hidden]) {
+    animation: aparecerSuave 0.4s ease-out forwards;
 }
