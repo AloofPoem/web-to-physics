@@ -81,6 +81,7 @@ function lineal(xData, yData) {
     var traceLine = {
                 x: [xMin, xMax],
                 y: [(m * xMin + b), (m * xMax + b)],
+                name: `y = ${m}x + ${b}`,
                 mode: 'lines',
                 line: {dash: 'dot'}
             }
@@ -141,6 +142,7 @@ function cuadratica(xData, yData) {
     var traceLine = {
                 x: xCurva,
                 y: yCurva,
+                name: `y = ${c}x² + ${b}x + ${a}` ,
                 mode: 'lines',
                 line: {dash: 'dot'}
             }
